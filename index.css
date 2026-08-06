@@ -36,11 +36,7 @@
     border-radius: 60px;
   }
 
-
-
-
-  
-.nav-button{
+ .nav-button{
     display: none;
     flex-direction: column;
     justify-content: center;
