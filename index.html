@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="paginaprincipal.css">
+    <link rel="stylesheet" href="cadastro.css">
+    <link rel="stylesheet" href="menumobile.css">
+    <title>LucasCeará</title>
+</head>
+<body>
+    <!-- ── NAV ── -->
+<nav>
+  <div class="nav-logo">
+    <svg class="nav-logo-icon" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- mini jangada -->
+      <polygon points="19,4 30,28 8,28" fill="#1A4A6B" opacity=".15"/>
+      <line x1="19" y1="4" x2="19" y2="30" stroke="#1A4A6B" stroke-width="2"/>
+      <path d="M10 28 Q19 32 28 28" stroke="#C97B3A" stroke-width="2" fill="none"/>
+      <text x="12" y="22" font-family="serif" font-style="italic" font-size="8" fill="#1A4A6B" opacity=".7">F=ma</text>
+    </svg>
+    <div class="nav-logo-text">
+      FísicaCE
+      <span>Prof. LucasCeará</span>
+    </div>
+  </div>
+
+<!--Navbar principal-->
+
+  <div class="nav-links">
+  
+    <li><a href="index.html">Início</a></li>
+    <li><a href="aulas.html">Aulas</a></li>
+    <li><a href="#">Atividades</a></li>
+    <li><a href="#">Material</a></li>
+    <button id="btnAbrir" class="nav-btn">Entrar</button>
+    
+  </div>
+
+  <!--Button mobile-->
+   <button class="nav-button" id="button" arial-label="Abrir menu">
+
+    <span></span>
+    <span></span>
+    <span></span>
+
+   </button>
+
+
+<div class="nav-mobile" id="menuMobile">
+
+    <a href="#">Início</a></li>
+    <a href="aulas.html">Aulas</a></li>
+    <a href="#">Atividades</a></li>
+    <a href="#">Material</a></li>
+    <hr>
+    <button id="btEnt" class="nav-btn-mobile">Entrar</button>
+
+</div>
+
+</nav>
+
+<!--Menu login mobile-->
+
+ <div id="overlay3" class="overlay3">
+
+   <div class="container">
+
+     <form class="login-box">
+       
+       <h2 id="Entrar">Login</h2>
+
+       <div class="input-group">
+        <label>Email</label>
+        <input id="email" type="email" placeholder="Digite seu email" required>
+       </div>
+
+       <div class="input-group">
+        <label>Senha</label>
+       <input id="password" type="password" placeholder="Digite sua senha" required>
+       </div>
+
+       <button id="botaoLogin" type="button">Entrar</button>
+
+       <p id="mensagem"></p>
+
+       <p class="register">
+          Não possui conta?
+        <a href="#btCadastro">Cadastre-se já!</a>
+
+       </p>
+
+      <span id="fechar3">X</span>
+
+</form>
+
+   </div>
+ </div>
+
+<!--Menu Login-->
+ <div id="overlay" class="overlay">
+
+   <div class="container">
+
+     <form class="login-box">
+       
+       <h2 id="Entrar">Login</h2>
+
+       <div class="input-group">
+        <label>Email</label>
+        <input id="email" type="email" placeholder="Digite seu email" required>
+       </div>
+
+       <div class="input-group">
+        <label>Senha</label>
+       <input id="password" type="password" placeholder="Digite sua senha" required>
+       </div>
+
+       <button id="botaoLogin" type="button">Entrar</button>
+
+       <p id="mensagem"></p>
+
+       <p class="register">
+          Não possui conta?
+        <a href="#btCadastro">Cadastre-se já!</a>
+
+       </p>       
+
+      <span id="fechar">X</span>
+
+</form>
+
+   </div>
+ </div>
+
+
+ 
+
+<!-- ── HERO ── -->
+<section class="hero">
+  <div class="hero-bg"></div>
+ 
+
+  
+  <div class="hero-content">
+    <div class="hero-eyebrow">Física — Ensino Médio · Ceará</div>
+    <h1 class="hero-title">
+      A força que<br>
+      <em>move o mar</em><br>
+      <span class="stroke">move a ciência</span>
+    </h1>
+    <p class="hero-sub">
+      Aulas, atividades e materiais de Física pensados para quem cresceu
+      entre o sertão e o litoral cearense — porque a natureza já ensina.
+    </p>
+    <div class="hero-actions">
+      <a href="#" class="btn-primary">Ver Aulas ↗</a>
+      <a href="#" class="btn-secondary">Atividades</a>
+    </div>
+  </div>
+ 
+<!---Onda divisória antes de aulas e conteúdos-->
+
+  <div class="hero-waves">
+    <svg viewBox="0 0 1440 70" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" width="100%" height="70">
+      <path d="M0,35 C240,70 480,0 720,35 C960,70 1200,0 1440,35 L1440,70 L0,70 Z" fill="#1A4A6B"/>
+    </svg>
+  </div>
+</section>
+ 
+<!-- ── STATS BAR ── -->
+<div class="stats-bar">
+  <div>
+    <div class="stat-num">#</div>
+    <div class="stat-label">Aulas disponíveis</div>
+  </div>
+  <div>
+    <div class="stat-num">#</div>
+    <div class="stat-label">Exercícios</div>
+  </div>
+  <div>
+    <div class="stat-num">3</div>
+    <div class="stat-label">Séries do E.M.</div>
+  </div>
+  <div>
+    <div class="stat-num">#</div>
+    <div class="stat-label">#</div>
+  </div>
+</div>
+ 
+<!-- ── AULAS ── -->
+<section class="section">
+  <div class="section-header">
+    <div>
+      <div class="section-eyebrow">Conteúdo em destaque</div>
+      <h2 class="section-title">Aulas para estudo</h2>
+    </div>
+    <a href="#" class="section-link">Ver todas as aulas →</a>
+  </div>
+ 
+  <div class="cards-grid">
+    <!-- Card 1 -->
+    <div class="aula-card">
+      <div class="card-thumb mecanica">
+        <div class="thumb-icon">🌊</div>
+        <div class="thumb-formula">F=ma</div>
+        <div class="card-badge">#</div>
+      </div>
+      <div class="card-body">
+        <div class="card-tag">#</div>
+        <div class="card-title">#</div>
+        <div class="card-desc">#</div>
+        <div class="card-footer">
+          <span class="card-meta">⏱ # min · # exercícios</span>
+          <div class="card-arrow">→</div>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- Card 2 -->
+    <div class="aula-card">
+      <div class="card-thumb ondas">
+        <div class="thumb-icon">🔊</div>
+        <div class="thumb-formula">v=λf</div>
+        <div class="card-badge">#</div>
+      </div>
+      <div class="card-body">
+        <div class="card-tag">#</div>
+        <div class="card-title">#</div>
+        <div class="card-desc">#</div>
+        <div class="card-footer">
+          <span class="card-meta">⏱ # min · # exercícios</span>
+          <div class="card-arrow">→</div>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- Card 3 -->
+    <div class="aula-card">
+      <div class="card-thumb termica">
+        <div class="thumb-icon">☀️</div>
+        <div class="thumb-formula">Q=mcΔT</div>
+        <div class="card-badge">#</div>
+      </div>
+      <div class="card-body">
+        <div class="card-tag">#</div>
+        <div class="card-title">#</div>
+        <div class="card-desc">#</div>
+        <div class="card-footer">
+          <span class="card-meta">⏱ # min · # exercícios</span>
+          <div class="card-arrow">→</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ── ONDA DIVISÓRIA ── -->
+<div class="wave-divider">
+  <svg viewBox="0 0 1440 50" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" width="100%" height="50">
+    <path d="M0,25 C360,50 720,0 1080,25 C1260,37.5 1350,12 1440,25 L1440,50 L0,50 Z" fill="#0D2535"/>
+  </svg>
+</div>
+ 
+<!-- ── ATIVIDADES ── -->
+<section class="section-atividades">
+  <div class="ativ-bg-dots"></div>
+  <div class="section-header" style="position:relative;z-index:1">
+    <div>
+      <div class="section-eyebrow">Tarefas e provas</div>
+      <h2 class="section-title">Atividades abertas</h2>
+    </div>
+    <a href="#" class="section-link">Ver todas →</a>
+  </div>
+ 
+  <div class="ativ-grid">
+    <div class="ativ-card">
+      <div class="ativ-icon-wrap">📝</div>
+      <div class="ativ-content">
+        <div class="ativ-tipo">Lista de exercícios</div>
+        <div class="ativ-titulo">Circuitos</div>
+        <div class="ativ-desc">10 questões de aplicação com contexto de Circuitos.</div>
+        <div class="ativ-prazo">📅 Entrega: #</div>
+      </div>
+    </div>
+ 
+    <div class="ativ-card">
+      <div class="ativ-icon-wrap">🧪</div>
+      <div class="ativ-content">
+        <div class="ativ-tipo">Relatório de Aulas</div>
+        <div class="ativ-titulo">Explicações da aula</div>
+        <div class="ativ-desc">Resolução de questões para entendimento.</div>
+        <div class="ativ-prazo">📅 Entrega: #</div>
+      </div>
+    </div>
+ 
+    <div class="ativ-card">
+      <div class="ativ-icon-wrap">📐</div>
+      <div class="ativ-content">
+        <div class="ativ-tipo">Revisão</div>
+        <div class="ativ-titulo">Circuitos</div>
+        <div class="ativ-desc">Conteúdos: Circuito</div>
+        <div class="ativ-prazo">📅 Data:#</div>
+      </div>
+    </div>
+ 
+    <div class="ativ-card">
+      <div class="ativ-icon-wrap">🎯</div>
+      <div class="ativ-content">
+        <div class="ativ-tipo">Simulado ENEM</div>
+        <div class="ativ-titulo">Simulado — Física Geral (20 questões)</div>
+        <div class="ativ-desc">Questões no modelo ENEM cobrindo toda a ementa do 3º ano.</div>
+        <div class="ativ-prazo">📅 Entrega até: #</div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ── ONDA DIVISÓRIA 2 ── -->
+<div class="wave-divider" style="background:#0D2535">
+  <svg viewBox="0 0 1440 50" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" width="100%" height="50">
+    <path d="M0,0 C360,50 720,0 1080,50 C1260,75 1350,25 1440,0 L1440,50 L0,50 Z" fill="#F7F1E8"/>
+  </svg>
+</div>
+ 
+<!-- ── FAIXA CTA ── -->
+<div class="faixa-ceara">
+  <div>
+    <div class="faixa-titulo">Do sertão ao litoral,<br>a física está em tudo.</div>
+    <div class="faixa-sub">Acesse todo o material, acompanhe suas notas e tire dúvidas com o professor.</div>
+  </div>
+  <button id="btCadastro" class="faixa-btn">Criar conta gratuita</button>
+</div>
+
+<!--Menu cadastro-->
+ <div id="overlay2" class="overlay">
+
+   <div class="container">
+
+     <form class="login-box">
+       
+       <h2 id="Entrar">Cadastrar</h2>
+
+       <div class="input-group">
+        <label>Email</label>
+        <input id="email" type="email" placeholder="Digite seu email" required>
+       </div>
+
+       <div class="input-group">
+        <label>Senha</label>
+       <input id="password" type="password" placeholder="Digite sua senha" required>
+       </div>
+
+       <button id="botaoCadastro" type="button">Cadastrar</button>
+
+       <p id="mensagem"></p>
+
+       <p class="register">
+          Possui conta?
+        <a href="index.html">Logue já!</a>
+
+       </p>
+
+      <span id="fechar2">X</span>
+
+</form>
+
+   </div>
+ </div>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div>
+    <div class="footer-brand">Física<span>CE</span></div>
+    <div class="footer-copy">© 2026 · Prof. LucasCeará · Fortaleza, CE</div>
+  </div>
+  <ul class="footer-links">
+    <li><a href="#">Aulas</a></li>
+    <li><a href="#">Atividades</a></li>
+    <li><a href="#">Material</a></li>
+    <li><a href="#">Contato</a></li>
+    <li><a  target="_blank" href="https://www.linkedin.com/in/victor-cardoso-802744328/">Desenvolvedor da página</a></li>
+    <li><a  target="_blank" href="https://www.instagram.com/italo_____vini?igsh=M2lhaDQxcm16YjM1">Designer da página</a></li>
+  </ul>
+</footer>
+
+<script src="buttonnavbar.js"></script>
+
+<script src="buttonlogin.js"></script>
+
+<script src="buttonentrarconta.js"></script>
+
+<script src="buttoncadastro.js"></script>
+
+</body>
+</html>
