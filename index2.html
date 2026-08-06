@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aulas — FísicaCE</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,500;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="index2.css">
+</head>
+<body>
+   <!-- ── NAV ── -->
+<nav>
+  <div class="nav-logo">
+    <svg class="nav-logo-icon" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- mini jangada -->
+      <polygon points="19,4 30,28 8,28" fill="#1A4A6B" opacity=".15"/>
+      <line x1="19" y1="4" x2="19" y2="30" stroke="#1A4A6B" stroke-width="2"/>
+      <path d="M10 28 Q19 32 28 28" stroke="#C97B3A" stroke-width="2" fill="none"/>
+      <text x="12" y="22" font-family="serif" font-style="italic" font-size="8" fill="#1A4A6B" opacity=".7">F=ma</text>
+    </svg>
+    <div class="nav-logo-text">
+      FísicaCE
+      <span>Prof. LucasCeará</span>
+    </div>
+  </div>
+  <div class="nav-links">
+  
+    <li><a href="index.html">Início</a></li>
+    <li><a href="aulas.html">Aulas</a></li>
+    <li><a href="#">Atividades</a></li>
+    <li><a href="#">Material</a></li>
+    <button id="btnAbrir" class="nav-btn">Entrar</button>
+    
+  </div>
+
+  <!--Button mobile-->
+   <button class="nav-button" id="button" arial-label="Abrir menu">
+
+    <span></span>
+    <span></span>
+    <span></span>
+
+   </button>
+
+
+<div class="nav-mobile" id="menuMobile">
+
+    <a href="#">Início</a></li>
+    <a href="aulas.html">Aulas</a></li>
+    <a href="#">Atividades</a></li>
+    <a href="#">Material</a></li>
+    <hr>
+    <button id="btEnt" class="nav-btn-mobile">Entrar</button>
+
+</div>
+
+ <!--Button mobile-->
+   <button class="nav-button" id="button" arial-label="Abrir menu">
+
+    <span></span>
+    <span></span>
+    <span></span>
+
+   </button>
+
+
+<div class="nav-mobile" id="menuMobile">
+
+    <a href="#">Início</a></li>
+    <a href="aulas.html">Aulas</a></li>
+    <a href="#">Atividades</a></li>
+    <a href="#">Material</a></li>
+    <hr>
+    <button id="btEnt" class="nav-btn-mobile">Entrar</button>
+
+</div>
+</nav>
+
+<!--Header page-->
+  <header class="page-head">
+    <div class="wrap">
+      <p class="eyebrow">Física — Ensino Médio · Ceará</p>
+      <h1 class="heading">
+        <span class="line-bold">Da cinemática</span>
+        <span class="line-italic">aos circuitos</span>
+        <span class="line-outline">elétricos</span>
+      </h1>
+      <p class="lede">
+        Nove aulas organizadas pelas três séries do Ensino Médio — cada uma com resumo teórico,
+        fórmulas essenciais e exercícios comentados para revisar no seu ritmo.
+      </p>
+ 
+      
+        <button class="filter-btn active" data-filter="todas" role="tab" aria-selected="true">Todas as aulas</button>
+        <button class="filter-btn" data-filter="1" role="tab" aria-selected="false">1º ano</button>
+        <button class="filter-btn" data-filter="2" role="tab" aria-selected="false">2º ano</button>
+        <button class="filter-btn" data-filter="3" role="tab" aria-selected="false">3º ano</button>
+
+
+    </div>
+  </header>
+ 
+  <div class="wave">
+    <svg viewBox="0 0 1440 64" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,20 C240,58 480,0 720,22 C960,44 1200,6 1440,26 L1440,64 L0,64 Z" fill="#0F2A3D"/>
+    </svg>
+  </div>
+ 
+  <section class="stats-section">
+    <div class="wrap">
+      <div class="stats-grid">
+        <div class="stat">
+          <div class="num">#</div>
+          <div class="label">Aulas disponíveis</div>
+        </div>
+        <div class="stat">
+          <div class="num">#</div>
+          <div class="label">Exercícios</div>
+        </div>
+        <div class="stat">
+          <div class="num">1,2,3</div>
+          <div class="label">Séries do E.M.</div>
+        </div>
+        <div class="stat">
+          <div class="num">#</div>
+          <div class="label">De conteúdo</div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <div class="wave" style="transform:scaleY(-1);">
+    <svg viewBox="0 0 1440 64" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,20 C240,58 480,0 720,22 C960,44 1200,6 1440,26 L1440,64 L0,64 Z" fill="#F5ECDC"/>
+    </svg>
+  </div>
+ 
+  <section class="cards-section">
+    <div class="wrap">
+      <div class="section-top">
+        <div>
+          <p class="eyebrow">Trilha de estudos</p>
+          <h2 class="heading-md">Aulas</h2>
+        </div>
+        <span class="count-note" id="count-note">9 aulas encontradas</span>
+      </div>
+ 
+      <div class="grid" id="grid">
+ 
+        <article class="card" data-serie="1" style="animation-delay:.02s">
+          <div class="card-banner banner-navy">
+            <span class="card-badge">1</span>
+            <span class="watermark">v=v₀+at</span>
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#F5ECDC" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><path d="M12 12 L16 8"/><path d="M12 4 L12 5.5"/></svg>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>Cinemática</h3>
+            <ul class="topics">
+              <li>Movimento uniforme (MU)</li>
+              <li>Movimento uniformemente variado (MUV)</li>
+              <li>Lançamento vertical e horizontal</li>
+            </ul>
+          </div>
+          <div class="card-footer">
+            <span class="meta">42 min · 8 exercícios</span>
+            <button class="arrow-btn" aria-label="Abrir aula de Cinemática">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+            </button>
+          </div>
+        </article>
+ 
+        <article class="card" data-serie="1" style="animation-delay:.08s">
+          <div class="card-banner banner-navy">
+            <span class="card-badge">1</span>
+            <span class="watermark">F=ma</span>
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#F5ECDC" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M2 12h4"/><path d="M18 12h4"/></svg>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>Leis de Newton</h3>
+            <ul class="topics">
+              <li>Inércia, ação e reação</li>
+              <li>Força resultante e peso</li>
+              <li>Plano inclinado e atrito</li>
+            </ul>
+          </div>
+          <div class="card-footer">
+            <span class="meta">38 min · 10 exercícios</span>
+            <button class="arrow-btn" aria-label="Abrir aula de Leis de Newton">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+            </button>
+          </div>
+        </article>
+ 
+        <article class="card" data-serie="1" style="animation-delay:.14s">
+          <div class="card-banner banner-navy">
+            <span class="card-badge">1</span>
+            <span class="watermark">F=Gm₁m₂/r²</span>
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#F5ECDC" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3.2"/><ellipse cx="12" cy="12" rx="9" ry="3.6"/></svg>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>Gravitação universal</h3>
+            <ul class="topics">
+              <li>Leis de Kepler</li>
+              <li>Força gravitacional</li>
+              <li>Velocidade de escape</li>
+            </ul>
+          </div>
+          <div class="card-footer">
+            <span class="meta">35 min · 6 exercícios</span>
+            <button class="arrow-btn" aria-label="Abrir aula de Gravitação universal">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+            </button>
+          </div>
+        </article>
+ 
+        <article class="card" data-serie="2" style="animation-delay:.02s">
+          <div class="card-banner banner-blue">
+            <span class="card-badge">2</span>
+            <span class="watermark">Q=mcΔT</span>
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#153A52" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v10.5"/><circle cx="12" cy="17" r="3"/><path d="M9.5 8h5"/></svg>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>Termologia</h3>
+            <ul class="topics">
+              <li>Escalas termométricas</li>
+              <li>Calor sensível e calor latente</li>
+              <li>Dilatação térmica</li>
+            </ul>
+          </div>
+          <div class="card-footer">
+            <span class="meta">40 min · 9 exercícios</span>
+            <button class="arrow-btn" aria-label="Abrir aula de Termologia">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+            </button>
+          </div>
+        </article>
+ 
+        <article class="card" data-serie="2" style="animation-delay:.08s">
+          <div class="card-banner banner-blue">
+            <span class="card-badge">2</span>
+            <span class="watermark">1/f=1/p+1/p'</span>
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#153A52" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12c3-5 15-5 18 0c-3 5-15 5-18 0Z"/><circle cx="12" cy="12" r="2.4"/></svg>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>Óptica geométrica</h3>
+            <ul class="topics">
+              <li>Reflexão e espelhos</li>
+              <li>Refração da luz</li>
+              <li>Lentes convergentes e divergentes</li>
+            </ul>
+          </div>
+          <div class="card-footer">
+            <span class="meta">45 min · 11 exercícios</span>
+            <button class="arrow-btn" aria-label="Abrir aula de Óptica geométrica">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+            </button>
+          </div>
+        </article>
+ 
+        <article class="card" data-serie="2" style="animation-delay:.14s">
+          <div class="card-banner banner-blue">
+            <span class="card-badge">2</span>
+            <span class="watermark">v=λf</span>
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#153A52" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12c2-6 4-6 6 0s4 6 6 0s4-6 6 0s2 0 2 0"/></svg>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>Ondulatória</h3>
+            <ul class="topics">
+              <li>Elementos de uma onda</li>
+              <li>Ondas sonoras e efeito Doppler</li>
+              <li>Interferência e ressonância</li>
+            </ul>
+          </div>
+          <div class="card-footer">
+            <span class="meta">37 min · 7 exercícios</span>
+            <button class="arrow-btn" aria-label="Abrir aula de Ondulatória">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+            </button>
+          </div>
+        </article>
+ 
+        <article class="card" data-serie="3" style="animation-delay:.02s">
+          <div class="card-banner banner-orange">
+            <span class="card-badge">3</span>
+            <span class="watermark">F=kq₁q₂/r²</span>
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#F5ECDC" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 L4 14 h6 l-1 8 l9 -13 h-6 z"/></svg>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>Eletrostática</h3>
+            <ul class="topics">
+              <li>Carga elétrica e Lei de Coulomb</li>
+              <li>Campo elétrico</li>
+              <li>Potencial elétrico</li>
+            </ul>
+          </div>
+          <div class="card-footer">
+            <span class="meta">41 min · 8 exercícios</span>
+            <button class="arrow-btn" aria-label="Abrir aula de Eletrostática">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+            </button>
+          </div>
+        </article>
+ 
+        <article class="card" data-serie="3" style="animation-delay:.08s">
+          <div class="card-banner banner-orange">
+            <span class="card-badge">3</span>
+            <span class="watermark">U=Ri</span>
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#F5ECDC" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h4l1.5-4l3 8l1.5-4l1.5 4l1.5-4h6.5"/></svg>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>Eletrodinâmica</h3>
+            <ul class="topics">
+              <li>Corrente e resistência elétrica</li>
+              <li>Leis de Ohm</li>
+              <li>Associação de resistores</li>
+            </ul>
+          </div>
+          <div class="card-footer">
+            <span class="meta">50 min · 14 exercícios</span>
+            <button class="arrow-btn" aria-label="Abrir aula de Eletrodinâmica">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+            </button>
+          </div>
+        </article>
+ 
+        <article class="card" data-serie="3" style="animation-delay:.14s">
+          <div class="card-banner banner-orange">
+            <span class="card-badge">3</span>
+            <span class="watermark">Φ=B·A</span>
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#F5ECDC" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4v8a5 5 0 0 0 10 0V4"/><path d="M7 4h4"/><path d="M13 4h4"/><path d="M7 16v4"/><path d="M17 16v4"/></svg>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>Eletromagnetismo</h3>
+            <ul class="topics">
+              <li>Campo magnético</li>
+              <li>Indução eletromagnética</li>
+              <li>Motores e geradores</li>
+            </ul>
+          </div>
+          <div class="card-footer">
+            <span class="meta">39 min · 7 exercícios</span>
+            <button class="arrow-btn" aria-label="Abrir aula de Eletromagnetismo">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+            </button>
+          </div>
+        </article>
+ 
+      </div>
+    </div>
+  </section>
+
+
+
+</body>
+</html>
+ 
