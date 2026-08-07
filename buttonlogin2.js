@@ -31,11 +31,11 @@ fechar2.addEventListener("click" , () => {
 /* Button entrar menu mobile */
 
 
-const btnAbrirMobile = document.getElementById("btnAbrirMobile");
+const btnAbrir = document.getElementById("btnAbrir");
 const overlay3 = document.getElementById("overlay3");
 const fechar3 = document.getElementById("fechar3");
 
-btnAbrirMobile.addEventListener("click" , () =>{
+btEnt.addEventListener("click" , () =>{
      overlay3.classList.add("ativo");
 
 })
