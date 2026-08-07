@@ -201,7 +201,7 @@ nav {
   .eyebrow::before{content:"";width:22px;height:1.5px;background:currentColor;display:block;}
 
   /* ---------- HERO ---------- */
-  .hero{padding:78px 0 46px;position:relative;}
+  .hero{padding:200px 0 46px;position:relative;}
   .hero-eyebrow{color:var(--terracotta-2);margin-bottom:22px;}
   h1.hero-title{
     font-family:var(--serif);
@@ -501,34 +501,56 @@ button:hover {
 
 
 /* ── FAIXA CEARENSE ── */
-  .faixa-ceara {
-    background: linear-gradient(135deg, var(--ocre) 0%, var(--terracota) 100%);
+.faixa-ceara {
+    width: 100%;
+    max-width: 100%;
+    background: linear-gradient(
+        135deg,
+        var(--ocre) 0%,
+        var(--terracota) 100%
+    );
+
     padding: 4rem;
-    display: grid; grid-template-columns: 1fr auto;
-    align-items: center; gap: 3rem;
-    position: relative; overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 3rem;
+
+    position: relative;
+    overflow: hidden;
     border-radius: 40px;
-  }
-  .faixa-ceara::after {
+}
+
+.faixa-ceara::after {
     content: '⚓';
-    position: absolute; right: 6rem; top: 50%;
+    position: absolute;
+    right: 6rem;
+    top: 50%;
     transform: translateY(-50%);
     font-size: 9rem;
     opacity: .08;
     line-height: 1;
-  }
- 
-  .faixa-titulo {
+    pointer-events: none;
+}
+
+.faixa-titulo {
     font-family: 'Playfair Display', serif;
     font-size: clamp(1.5rem, 2.5vw, 2.1rem);
-    font-weight: 700; color: #fff;
-    line-height: 1.2; margin-bottom: .6rem;
-  }
-  .faixa-sub {
-    font-size: .95rem; color: rgba(255,255,255,.8);
-    font-weight: 300; line-height: 1.6;
-  }
-  .faixa-btn {
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.2;
+    margin-bottom: .6rem;
+}
+
+.faixa-sub {
+    font-size: .95rem;
+    color: rgba(255,255,255,.8);
+    font-weight: 300;
+    line-height: 1.6;
+    max-width: 650px;
+}
+
+.faixa-btn {
     background: #fff;
     color: var(--terracota);
     padding: .9rem 2.2rem;
@@ -539,36 +561,61 @@ button:hover {
     white-space: nowrap;
     transition: transform .15s, box-shadow .15s;
     display: inline-block;
-    position: relative; z-index: 1;
-  }
-  .faixa-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,.2); }
+    position: relative;
+    z-index: 1;
+}
+
+.faixa-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,.2);
+}
 
   /* ── RODAPÉ ── */
-  footer {
+footer {
+    width: 100%;
     background: var(--noite);
+
     padding: 3rem 4rem;
-    display: grid; grid-template-columns: 1fr auto;
-    align-items: center; gap: 2rem;
+
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 2rem;
+
     border-top: 1px solid rgba(201,123,58,.25);
-  }
- 
-  .footer-brand {
+}
+
+.footer-brand {
     font-family: 'Playfair Display', serif;
-    font-size: 1.2rem; font-weight: 700; color: #fff;
-  }
-  .footer-brand span { color: var(--ocre); }
-  .footer-copy {
-    font-size: .78rem; color: rgba(255,255,255,.4);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.footer-brand span {
+    color: var(--ocre);
+}
+
+.footer-copy {
+    font-size: .78rem;
+    color: rgba(255,255,255,.4);
     margin-top: .3rem;
-  }
- 
-  .footer-links {
-    display: flex; gap: 1.8rem; list-style: none;
-  }
-  .footer-links a {
-    font-size: .83rem; color: rgba(255,255,255,.5);
+}
+
+.footer-links {
+    display: flex;
+    gap: 1.8rem;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    font-size: .83rem;
+    color: rgba(255,255,255,.5);
     text-decoration: none;
     transition: color .2s;
-  }
-  .footer-links a:hover { color: var(--ocre); }
- 
+}
+
+.footer-links a:hover {
+    color: var(--ocre);
+}
