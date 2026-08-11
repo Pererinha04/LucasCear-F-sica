@@ -1,8 +1,8 @@
-const btnAbrir = document.getElementById("btnAbrir");
+const btAbrir = document.getElementById("btAbrir");
 const overlay = document.getElementById("overlay");
 const fechar = document.getElementById("fechar");
 
-btnAbrir.addEventListener("click", () =>{
+btAbrir.addEventListener("click", () =>{
     overlay.classList.add("ativo");
 
 });
@@ -28,19 +28,3 @@ fechar2.addEventListener("click" , () => {
 
 })
 
-/* Button entrar menu mobile */
-
-
-const btnAbrir = document.getElementById("btnAbrir");
-const overlay3 = document.getElementById("overlay3");
-const fechar3 = document.getElementById("fechar3");
-
-btEnt.addEventListener("click" , () =>{
-     overlay3.classList.add("ativo");
-
-})
-
-fechar3.addEventListener("click" , () => {
-   overlay3.classList.remove("ativo");
-
-})
