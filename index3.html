@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atividades — FísicaCE</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="index3.css">
+</head>
+<body>
+
+ <!-- ── NAV ── -->
+<nav class="navprincipal">
+  <div class="nav-logo">
+    <svg class="nav-logo-icon" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- mini jangada -->
+      <polygon points="19,4 30,28 8,28" fill="#1A4A6B" opacity=".15"/>
+      <line x1="19" y1="4" x2="19" y2="30" stroke="#1A4A6B" stroke-width="2"/>
+      <path d="M10 28 Q19 32 28 28" stroke="#C97B3A" stroke-width="2" fill="none"/>
+      <text x="12" y="22" font-family="serif" font-style="italic" font-size="8" fill="#1A4A6B" opacity=".7">F=ma</text>
+    </svg>
+    <div class="nav-logo-text">
+      FísicaCE
+      <span>Prof. LucasCeará</span>
+    </div>
+  </div>
+
+<!--Navbar principal-->
+
+  <div class="nav-links">
+  
+    <li><a href="index.html">Início</a></li>
+    <li><a href="index2.html">Aulas</a></li>
+    <li><a href="#">Atividades</a></li>
+    <li><a href="#">Material</a></li>
+    <button id="btAbrir" class="nav-btn">Entrar</button>
+    
+  </div>
+
+  <!--Button mobile-->
+   <button class="nav-button" id="button" arial-label="Abrir menu">
+
+    <span></span>
+    <span></span>
+    <span></span>
+
+   </button>
+
+
+<div class="nav-mobile" id="menuMobile">
+
+    <a href="index.html">Início</a></li>
+    <a href="index2.html">Aulas</a></li>
+    <a href="#">Atividades</a></li>
+    <a href="#">Material</a></li>
+    <hr>
+    <button id="btEnt" class="nav-btn-mobile">Entrar</button>
+
+</div>
+
+</nav>
+
+<!--Menu login mobile-->
+
+ <div id="overlay3" class="overlay3">
+
+   <div class="container">
+
+     <form class="login-box">
+       
+       <h2 id="Entrar">Login</h2>
+
+       <div class="input-group">
+        <label>Email</label>
+        <input id="email" type="email" placeholder="Digite seu email" required>
+       </div>
+
+       <div class="input-group">
+        <label>Senha</label>
+       <input id="password" type="password" placeholder="Digite sua senha" required>
+       </div>
+
+       <button id="botaoLogin" type="button">Entrar</button>
+
+       <p id="mensagem"></p>
+
+       <p class="register">
+          Não possui conta?
+        <a href="#btCadastro">Cadastre-se já!</a>
+
+       </p>
+
+      <span id="fechar3">X</span>
+
+</form>
+
+   </div>
+ </div>
+
+<!--Menu Login-->
+ <div id="overlay" class="overlay">
+
+   <div class="container">
+
+     <form class="login-box">
+       
+       <h2 id="Entrar">Login</h2>
+
+       <div class="input-group">
+        <label>Email</label>
+        <input id="email" type="email" placeholder="Digite seu email" required>
+       </div>
+
+       <div class="input-group">
+        <label>Senha</label>
+       <input id="password" type="password" placeholder="Digite sua senha" required>
+       </div>
+
+       <button id="botaoLogin" type="button">Entrar</button>
+
+       <p id="mensagem"></p>
+
+       <p class="register">
+          Não possui conta?
+        <a href="#btCadastro">Cadastre-se já!</a>
+
+       </p>       
+
+      <span id="fechar">X</span>
+
+</form>
+
+   </div>
+ </div>
+
+
+<div class="page">
+
+  <!-- Começo da página -->
+  <header class="intro">
+    <div class="wrap">
+      <p class="eyebrow">FÍSICA — ENSINO MÉDIO · CEARÁ</p>
+      <h1>Atividades para <em>cada etapa</em> da caminhada</h1>
+      <p class="lead">
+        Listas, relatórios, revisões e simulados organizados por série — do primeiro contato
+        com o movimento, no 1º ano, até a reta final rumo ao ENEM, no 3º ano.
+      </p>
+      <nav class="year-jump" aria-label="Ir para a série">
+        <a href="#ano-1"><span class="dot"></span>1º ano · Mecânica</a>
+        <a href="#ano-2"><span class="dot"></span>2º ano · Ondas e Calor</a>
+        <a href="#ano-3"><span class="dot"></span>3º ano · Eletricidade</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="wave" aria-hidden="true">
+    <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+      <path d="M0,32 C 240,60 480,4 720,28 C 960,52 1200,10 1440,30 L1440,60 L0,60 Z" fill="#15222E"></path>
+    </svg>
+  </div>
+
+  <!-- 1º ANO -->
+  <section class="year-section" id="ano-1">
+    <div class="wrap">
+      <div class="year-head">
+        <div class="year-head-left">
+          <div class="tide-gauge" aria-hidden="true">
+            <span></span><span></span><span class="filled"></span>
+          </div>
+          <div>
+            <p class="eyebrow">1º ANO · MECÂNICA E ENERGIA</p>
+            <h2>Do repouso ao movimento</h2>
+          </div>
+        </div>
+        <a class="see-all" href="#">Ver todas as atividades →</a>
+      </div>
+
+      <div class="cards-grid">
+
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h9l5 5v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Z"></path><path d="M14 2v6h6"></path><path d="M9 13h6M9 17h4"></path></svg>
+          </div>
+          <div class="card-body">
+            <p class="card-tag">Lista de exercícios</p>
+            <h3 class="card-title">Cinemática do dia a dia</h3>
+            <p class="card-desc">12 questões de aplicação sobre MRU e MRUV, do ônibus da linha até o avião pousando em Fortaleza.</p>
+            <p class="card-meta">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="2"></rect><path d="M16 2v4M8 2v4M3 10h18"></path></svg>
+              Entrega: 18/08
+            </p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"></path></svg>
+          </div>
+          <div class="card-body">
+            <p class="card-tag">Relatório de aula</p>
+            <h3 class="card-title">Leis de Newton</h3>
+            <p class="card-desc">Registro por escrito da explicação sobre inércia, força resultante e o princípio da ação e reação.</p>
+            <p class="card-meta">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="2"></rect><path d="M16 2v4M8 2v4M3 10h18"></path></svg>
+              Entrega: 21/08
+            </p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m3 21 8-8"></path><path d="M15 3 3 15v6h6L21 9Z"></path><path d="m17 7 3-3"></path></svg>
+          </div>
+          <div class="card-body">
+            <p class="card-tag">Revisão</p>
+            <h3 class="card-title">Trabalho e energia</h3>
+            <p class="card-desc">Conteúdos: energia cinética, energia potencial gravitacional e conservação de energia mecânica.</p>
+            <p class="card-meta">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="2"></rect><path d="M16 2v4M8 2v4M3 10h18"></path></svg>
+              Data: 25/08
+            </p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="5"></circle><circle cx="12" cy="12" r="1"></circle></svg>
+          </div>
+          <div class="card-body">
+            <p class="card-tag">Simulado ENEM</p>
+            <h3 class="card-title">Mecânica geral (15 questões)</h3>
+            <p class="card-desc">Questões no modelo ENEM cobrindo cinemática, dinâmica e gravitação universal.</p>
+            <p class="card-meta">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="2"></rect><path d="M16 2v4M8 2v4M3 10h18"></path></svg>
+              Entrega até: 29/08
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="wave" aria-hidden="true">
+    <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+      <path d="M0,30 C 240,8 480,52 720,28 C 960,4 1200,44 1440,26 L1440,0 L0,0 Z" fill="#15222E"></path>
+      <path d="M0,30 C 240,8 480,52 720,28 C 960,4 1200,44 1440,26 L1440,60 L0,60 Z" fill="#17242E"></path>
+    </svg>
+  </div>
+
+  <!-- 2º ANO -->
+  <section class="year-section alt" id="ano-2">
+    <div class="wrap">
+      <div class="year-head">
+        <div class="year-head-left">
+          <div class="tide-gauge" aria-hidden="true">
+            <span></span><span class="filled"></span><span class="filled"></span>
+          </div>
+          <div>
+            <p class="eyebrow">2º ANO · TERMOLOGIA, ÓPTICA E ONDAS</p>
+            <h2>O calor, a luz e a onda</h2>
+          </div>
+        </div>
+        <a class="see-all" href="#">Ver todas as atividades →</a>
+      </div>
+
+      <div class="cards-grid">
+
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h9l5 5v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Z"></path><path d="M14 2v6h6"></path><path d="M9 13h6M9 17h4"></path></svg>
+          </div>
+          <div class="card-body">
+            <p class="card-tag">Lista de exercícios</p>
+            <h3 class="card-title">Termometria e dilatação</h3>
+            <p class="card-desc">10 questões de aplicação com o contraste de temperatura entre o sertão e o litoral cearense.</p>
+            <p class="card-meta">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="2"></rect><path d="M16 2v4M8 2v4M3 10h18"></path></svg>
+              Entrega: 08/09
+            </p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"></path></svg>
+          </div>
+          <div class="card-body">
+            <p class="card-tag">Relatório de aula</p>
+            <h3 class="card-title">Leis da termodinâmica</h3>
+            <p class="card-desc">Registro das explicações sobre trocas de calor, trabalho de um gás e rendimento de máquinas térmicas.</p>
+            <p class="card-meta">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="2"></rect><path d="M16 2v4M8 2v4M3 10h18"></path></svg>
+              Entrega: 11/09
+            </p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m3 21 8-8"></path><path d="M15 3 3 15v6h6L21 9Z"></path><path d="m17 7 3-3"></path></svg>
+          </div>
+          <div class="card-body">
+            <p class="card-tag">Revisão</p>
+            <h3 class="card-title">Óptica geométrica</h3>
+            <p class="card-desc">Conteúdos: reflexão, refração, espelhos planos e esféricos e formação de imagem em lentes.</p>
+            <p class="card-meta">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="2"></rect><path d="M16 2v4M8 2v4M3 10h18"></path></svg>
+              Data: 15/09
+            </p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="5"></circle><circle cx="12" cy="12" r="1"></circle></svg>
+          </div>
+          <div class="card-body">
+            <p class="card-tag">Simulado ENEM</p>
+            <h3 class="card-title">Ondas e calor (18 questões)</h3>
+            <p class="card-desc">Simulado no modelo ENEM sobre ondulatória, acústica, óptica e termologia.</p>
+            <p class="card-meta">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="2"></rect><path d="M16 2v4M8 2v4M3 10h18"></path></svg>
+              Entrega até: 19/09
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="wave" aria-hidden="true">
+    <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+      <path d="M0,32 C 240,60 480,4 720,28 C 960,52 1200,10 1440,30 L1440,0 L0,0 Z" fill="#17242E"></path>
+      <path d="M0,32 C 240,60 480,4 720,28 C 960,52 1200,10 1440,30 L1440,60 L0,60 Z" fill="#15222E"></path>
+    </svg>
+  </div>
+
+  <!-- 3º ANO -->
+  <section class="year-section" id="ano-3">
+    <div class="wrap">
+      <div class="year-head">
+        <div class="year-head-left">
+          <div class="tide-gauge" aria-hidden="true">
+            <span class="filled"></span><span class="filled"></span><span class="filled"></span>
+          </div>
+          <div>
+            <p class="eyebrow">3º ANO · ELETRICIDADE E FÍSICA MODERNA</p>
+            <h2>A corrente que chega ao ENEM</h2>
+          </div>
+        </div>
+        <a class="see-all" href="#">Ver todas as atividades →</a>
+      </div>
+
+      <div class="cards-grid">
+
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h9l5 5v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Z"></path><path d="M14 2v6h6"></path><path d="M9 13h6M9 17h4"></path></svg>
+          </div>
+          <div class="card-body">
+            <p class="card-tag">Lista de exercícios</p>
+            <h3 class="card-title">Circuitos</h3>
+            <p class="card-desc">10 questões de aplicação com contexto de circuitos.</p>
+            <p class="card-meta">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="2"></rect><path d="M16 2v4M8 2v4M3 10h18"></path></svg>
+              Entrega: 29/09
+            </p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"></path></svg>
+          </div>
+          <div class="card-body">
+            <p class="card-tag">Relatório de aula</p>
+            <h3 class="card-title">Explicações da aula</h3>
+            <p class="card-desc">Resolução de questões para entendimento.</p>
+            <p class="card-meta">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="2"></rect><path d="M16 2v4M8 2v4M3 10h18"></path></svg>
+              Entrega: 02/10
+            </p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m3 21 8-8"></path><path d="M15 3 3 15v6h6L21 9Z"></path><path d="m17 7 3-3"></path></svg>
+          </div>
+          <div class="card-body">
+            <p class="card-tag">Revisão</p>
+            <h3 class="card-title">Circuitos</h3>
+            <p class="card-desc">Conteúdos: circuito.</p>
+            <p class="card-meta">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="2"></rect><path d="M16 2v4M8 2v4M3 10h18"></path></svg>
+              Data: 06/10
+            </p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="5"></circle><circle cx="12" cy="12" r="1"></circle></svg>
+          </div>
+          <div class="card-body">
+            <p class="card-tag">Simulado ENEM</p>
+            <h3 class="card-title">Física geral (20 questões)</h3>
+            <p class="card-desc">Questões no modelo ENEM cobrindo toda a ementa do 3º ano.</p>
+            <p class="card-meta">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="2"></rect><path d="M16 2v4M8 2v4M3 10h18"></path></svg>
+              Entrega até: 10/10
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+</div>
+<script src="buttonlogin.js"></script>
+
+<script src="buttonlogin2.js"></script>
+
+<script src="navbarbutton.js"></script>
+
+<script src="signuobutton.js"></script>
+</body>
+</html>
