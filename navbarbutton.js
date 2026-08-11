@@ -1,4 +1,4 @@
-const hamburger = document.getElementById('button');
+const button = document.getElementById('button');
 const menuMobile = document.getElementById('menuMobile');
 
 const btEnt = document.getElementById('btEnt');
@@ -9,14 +9,14 @@ const fechar3 = document.getElementById('fechar3');
 function atualizarNav() {
     const isMobile = window.innerWidth <= 900;
 
-    hamburger.style.display = isMobile ? 'flex' : 'none';
+    button.style.display = isMobile ? 'flex' : 'none';
 
     document.querySelector('.nav-links').style.display =
         isMobile ? 'none' : 'flex';
 
     if (!isMobile) {
         menuMobile.classList.remove('aberto');
-        hamburger.classList.remove('aberto');
+        button.classList.remove('aberto');
     }
 }
 
@@ -26,10 +26,10 @@ atualizarNav();
 window.addEventListener('resize', atualizarNav);
 
 
-/* Abrir menu hamburger */
+/* Abrir menu mobile */
 
-hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('aberto');
+button.addEventListener('click', () => {
+    button.classList.toggle('aberto');
     menuMobile.classList.toggle('aberto');
 });
 
@@ -55,7 +55,7 @@ fechar3.addEventListener('click', () => {
 
 menuMobile.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
-        hamburger.classList.remove('aberto');
+        button.classList.remove('aberto');
         menuMobile.classList.remove('aberto');
     });
 });
