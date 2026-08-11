@@ -12,6 +12,9 @@
     --espuma:    #D8EEF7;
     --noite:     #0D2535;
     --texto:     #2C1F10;
+    
+    --font-display: "Fraunces", Georgia, serif;
+    --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   }
  
   html { scroll-behavior: smooth; }
