@@ -31,7 +31,7 @@
 
 
   *{margin:0;padding:0;box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
+  html{scroll-behavior:smooth;overflow-x:hidden;} /* o overflow-x corta o que passar da largura */
   body{
     font-family:var(--sans);
     background:var(--cream);
@@ -359,6 +359,127 @@ nav {
 
   section[id]{scroll-margin-top:24px;}
 
+/* ── FAIXA CEARENSE ── */
+.faixa-ceara {
+    width: 100%;
+    max-width: 100%;
+    background: linear-gradient(
+        135deg,
+        var(--ocre) 0%,
+        var(--terracota) 100%
+    );
+
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 3rem;
+
+    position: relative;
+    overflow: hidden;
+    border-radius: 40px;
+}
+
+.faixa-ceara::after {
+    content: '⚓';
+    position: absolute;
+    right: 6rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 9rem;
+    opacity: .08;
+    line-height: 1;
+    pointer-events: none;
+}
+
+.faixa-titulo {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.5rem, 2.5vw, 2.1rem);
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.2;
+    margin-bottom: .6rem;
+}
+
+.faixa-sub {
+    font-size: .95rem;
+    color: rgba(255,255,255,.8);
+    font-weight: 300;
+    line-height: 1.6;
+    max-width: 650px;
+}
+
+.faixa-btn {
+    background: #fff;
+    color: var(--terracota);
+    padding: .9rem 2.2rem;
+    border-radius: 2rem;
+    font-size: .95rem;
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: transform .15s, box-shadow .15s;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+.faixa-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,.2);
+}
+
+  /* ── RODAPÉ ── */
+footer {
+    width: 100%;
+    background: var(--noite);
+
+    padding: 3rem 4rem;
+
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 2rem;
+
+    border-top: 1px solid rgba(201,123,58,.25);
+}
+
+.footer-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.footer-brand span {
+    color: var(--ocre);
+}
+
+.footer-copy {
+    font-size: .78rem;
+    color: rgba(255,255,255,.4);
+    margin-top: .3rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 1.8rem;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    font-size: .83rem;
+    color: rgba(255,255,255,.5);
+    text-decoration: none;
+    transition: color .2s;
+}
+
+.footer-links a:hover {
+    color: var(--ocre);
+}
+
+
   /* ---------- MOBILE ---------- */
   @media(max-width:640px){
     .wrap{padding:0 20px;}
@@ -383,10 +504,15 @@ nav {
 
     .stats-bar{padding:40px 0 44px;}
     .stats-grid{gap:26px 16px;}
-    .faixa-ceara { grid-template-columns: 1fr; padding: 3rem 1.5rem; }
-    .faixa-ceara::after { display: none; }
-    footer { grid-template-columns: 1fr; padding: 2.5rem 1.5rem; }
-    .footer-links { flex-wrap: wrap; gap: 1rem; }
+     nav{padding:1rem 1.5rem;}
+    .nav-links{display:none;}
+    .nav-button{display:flex !important;}
+
+    .faixa-ceara{grid-template-columns:1fr;padding:3rem 1.5rem;}
+    .faixa-ceara::after{display:none;}
+
+    footer{grid-template-columns:1fr;padding:2.5rem 1.5rem;}
+    .footer-links{flex-wrap:wrap;gap:1rem;}
   }
 
   .overlay {
@@ -513,122 +639,3 @@ button:hover {
 }
 
 
-/* ── FAIXA CEARENSE ── */
-.faixa-ceara {
-    width: 100%;
-    max-width: 100%;
-    background: linear-gradient(
-        135deg,
-        var(--ocre) 0%,
-        var(--terracota) 100%
-    );
-
-    padding: 4rem;
-    display: grid;
-    grid-template-columns: 1fr auto;
-    align-items: center;
-    gap: 3rem;
-
-    position: relative;
-    overflow: hidden;
-    border-radius: 40px;
-}
-
-.faixa-ceara::after {
-    content: '⚓';
-    position: absolute;
-    right: 6rem;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 9rem;
-    opacity: .08;
-    line-height: 1;
-    pointer-events: none;
-}
-
-.faixa-titulo {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(1.5rem, 2.5vw, 2.1rem);
-    font-weight: 700;
-    color: #fff;
-    line-height: 1.2;
-    margin-bottom: .6rem;
-}
-
-.faixa-sub {
-    font-size: .95rem;
-    color: rgba(255,255,255,.8);
-    font-weight: 300;
-    line-height: 1.6;
-    max-width: 650px;
-}
-
-.faixa-btn {
-    background: #fff;
-    color: var(--terracota);
-    padding: .9rem 2.2rem;
-    border-radius: 2rem;
-    font-size: .95rem;
-    font-weight: 600;
-    text-decoration: none;
-    white-space: nowrap;
-    transition: transform .15s, box-shadow .15s;
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-}
-
-.faixa-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0,0,0,.2);
-}
-
-  /* ── RODAPÉ ── */
-footer {
-    width: 100%;
-    background: var(--noite);
-
-    padding: 3rem 4rem;
-
-    display: grid;
-    grid-template-columns: 1fr auto;
-    align-items: center;
-    gap: 2rem;
-
-    border-top: 1px solid rgba(201,123,58,.25);
-}
-
-.footer-brand {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: #fff;
-}
-
-.footer-brand span {
-    color: var(--ocre);
-}
-
-.footer-copy {
-    font-size: .78rem;
-    color: rgba(255,255,255,.4);
-    margin-top: .3rem;
-}
-
-.footer-links {
-    display: flex;
-    gap: 1.8rem;
-    list-style: none;
-    flex-wrap: wrap;
-}
-
-.footer-links a {
-    font-size: .83rem;
-    color: rgba(255,255,255,.5);
-    text-decoration: none;
-    transition: color .2s;
-}
-
-.footer-links a:hover {
-    color: var(--ocre);
-}
